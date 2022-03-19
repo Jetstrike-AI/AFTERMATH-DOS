@@ -30,7 +30,7 @@ def Menu(thread=threads, cycle=cycles):
     if url == "":
         Menu()
     else:
-        threading_start(thread=int(threads1), cycles=cycle1)
+        threading_start(thread=int(threads1), cycles=int(cycle1))
 
 
 def threading_start(thread, cycles):
