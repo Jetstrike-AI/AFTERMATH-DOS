@@ -19,13 +19,19 @@ You can use AFTERMATH to test your server on DOS/DDOS protect.
 =
 -Windows🖥️:
 
-    1)Download ZIP
-    2)Unpack ZIP
-    3)Install requirements.txt
-    4)Done
+    If not installed git:
+        1)Download ZIP
+        2)Unpack ZIP
+        3)Install requirement.txt
+        4)Done!
+    If installed git:
+        1)git clone https://github.com/Jetstrike-AI/AFTERMATH-DOS
+        2)cd {Folder with AFTERMATH}
+        3)pip3 install -r requirement.txt
+        4)Done!
 
 -Termux📱:
     
     1)git clone https://github.com/Jetstrike-AI/AFTERMATH-DOS
     2)pip3 install -r requirements.txt
-    3)Done
+    3)Done!
