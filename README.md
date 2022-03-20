@@ -1,6 +1,6 @@
 # AFTERMATH-DOS
 
-Opensource DOS project, created on python💡
+Open-source DOS project, created on python💡
 
 What if AFTERMATH?
 =
