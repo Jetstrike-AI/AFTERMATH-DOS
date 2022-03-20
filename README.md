@@ -1,21 +1,23 @@
-# ▶AFTERMATH-DOS◀
+# AFTERMATH-DOS
 
 Opensource DOS project, created on python💡
 
-▶What if AFTERMATH?◀
+What if AFTERMATH?
 =
 
 💽AFTERMATH - DOS utility for pentesting.
 
 You can use AFTERMATH to test your server on DOS/DDOS protect.
 
-▶Supporting plaforms◀:
+Supporting plaforms:
 =
 -Windows(Python 3+)🖥️
 
 -Termux(Python 3+)📱
 
-▶How to install?◀
+-Linux(Python 3+)🖥️
+
+How to install?
 =
 -Windows🖥️:
 
@@ -35,3 +37,9 @@ You can use AFTERMATH to test your server on DOS/DDOS protect.
     1)git clone https://github.com/Jetstrike-AI/AFTERMATH-DOS
     2)pip3 install -r requirements.txt
     3)Done!
+-Linux🖥️:
+    
+    1)git clone https://github.com/Jetstrike-AI/AFTERMATH-DOS
+    2)cd AFTERMATH-DOS
+    3)pip3 install -r requirements.txt
+    4)Done!
